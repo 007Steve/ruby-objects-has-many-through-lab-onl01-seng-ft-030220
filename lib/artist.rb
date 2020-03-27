@@ -18,8 +18,8 @@ def new_song(song_name,genre)
   Song.new(song_name,self,genre)
 end
 
-def genre
-  Genre.all.select {|g| g.}
+def genres
+ self.songs.map{|song| song.genre}
 end
 
 end 
