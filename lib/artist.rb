@@ -18,5 +18,8 @@ def new_song(song_name,genre)
   Song.new(song_name,self,genre)
 end
 
+def genre
+  Genre.all.select {|g| g.}
+end
 
 end 
